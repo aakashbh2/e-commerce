@@ -5,7 +5,9 @@ import { HttpModule } from "@angular/http";
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from "./app.component";
-import { routing } from "../app.routing";
+import { BasicModule } from "../components/basic.module";
+import { ContainerModule } from '../container/container.module';
+import { routing } from "../routes/app.routing";
 
 @NgModule({
     declarations: [
@@ -15,6 +17,8 @@ import { routing } from "../app.routing";
         BrowserModule,
         FormsModule,
         HttpModule,
+        BasicModule,
+        ContainerModule,
         RouterModule.forRoot(routing),
     ],
     providers: [],
