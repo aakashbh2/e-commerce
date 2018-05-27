@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'shopping-cart',
@@ -8,4 +9,8 @@ import { Component } from '@angular/core';
 })
 
 export class ShoppingCartComponent {
+
+  constructor (private titleService: Title) {
+    this.titleService.setTitle('Shopping Bag');
+  }
 }

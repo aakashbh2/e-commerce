@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'contact-us',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 })
 
 export class ContactUsComponent {
+  constructor (private titleService: Title) {
+    this.titleService.setTitle('Contact Us');
+  }
 }
