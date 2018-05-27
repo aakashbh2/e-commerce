@@ -1,0 +1,8 @@
+.center_text {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.abs_pos {
+  position: absolute;
+}

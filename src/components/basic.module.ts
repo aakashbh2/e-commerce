@@ -37,7 +37,8 @@ import { RelatedProductsComponent } from './related-products/related-products.co
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
+        HttpModule,
+        RouterModule
     ],
     providers: []
 })
