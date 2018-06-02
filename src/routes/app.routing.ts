@@ -12,6 +12,7 @@ export const routing: Routes = [
   {	path: '', component: HomePageComponent},
   {	path: 'shop/:id', component: ProductListComponent},
   {	path: 'product/:id/buy', component: ProductDescComponent},
+  // {	path: 'sale', component: SaleComponent},
   {	path: 'checkout/cart', component: ShoppingCartComponent},
   {	path: 'contact-us', component: ContactUsComponent},
   {	path: 'about-us', component: AboutUsComponent},

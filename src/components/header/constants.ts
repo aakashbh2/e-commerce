@@ -1,4 +1,4 @@
-export const headerItems = [
+export const HEADER_ITEMS = [
   {
     name: 'Home',
     active: true,

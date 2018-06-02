@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import * as CONST from './constants';
 
 @Component({
@@ -8,11 +8,8 @@ import * as CONST from './constants';
     providers: []
 })
 
-export class HeaderComponent implements OnInit{
+export class HeaderComponent {
   public topBar: string = 'Free shipping for standard order over $100.';
-  public headerItems;
+  @Input() headerItems = CONST.HEADER_ITEMS;
 
-  ngOnInit() {
-    this.headerItems = CONST.headerItems;
-  }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import * as CONST from './constants';
 
 @Component({
     selector: 'catalogue-banner-overview',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 
 export class CatalogueBannerComponent {
+  @Input() bannerList = CONST.BANNER_LIST;
 }
