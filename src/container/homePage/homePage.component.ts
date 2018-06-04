@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LoaderService } from '../../components/loader/loader.service';
 
 @Component({
     selector: 'homePage',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
     providers: []
 })
 
-export class HomePageComponent {
+export class HomePageComponent implements OnInit{
+
+  constructor(private loaderService: LoaderService) { }
+
+  ngOnInit() {
+  }
+
 }

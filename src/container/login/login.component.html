@@ -1,0 +1,23 @@
+<!-- TODO -- remove header margin for top bar -->
+<div class="background-color m-t-100 p-b-30">
+  <div class="login-page">
+    <div class="form">
+      <div>
+        <p class="login-title m-b-40">Login to e-commerce</p>
+      </div>
+      <form class="register-form">
+        <input type="text" placeholder="Name" [(ngModel)]="name" name="name"/>
+        <input type="password" placeholder="Password" [(ngModel)]="password" name="password"/>
+        <input type="text" placeholder="Email" [(ngModel)]="email" name="email"/>
+        <button (click)=signup()>Sign Up</button>
+        <p class="message">Already registered? <a class="cursor">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="text" placeholder="Username" [(ngModel)]="username" name="username"/>
+        <input type="password" placeholder="Password" [(ngModel)]="passkey" name="passkey"/>
+        <button (click)=signin()>Sign In</button>
+        <p class="message">Not registered? <a class="cursor">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+</div>

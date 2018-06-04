@@ -25,9 +25,65 @@
   <!--===============================================================================================-->
 </head>
 
+<style>
+
+.spinner {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  display: inline-block;
+  animation: rotate 1.5s linear infinite;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+}
+.spinner .inner {
+  width: 150px;
+  height: 75px;
+  border: 48px solid #333;
+  box-sizing: border-box;
+}
+.spinner .upper, .spinner .lower {
+  width: 100%;
+  position: absolute;
+  height: calc(50% - 5px);
+  overflow: hidden;
+}
+.spinner .upper {
+  top: 0;
+}
+.spinner .upper .inner {
+  border-radius: 123px 123px 0 0;
+  border-bottom: 0;
+  margin-bottom: -5px;
+}
+.spinner .lower {
+  bottom: 0;
+}
+.spinner .lower .inner {
+  margin-top: -5px;
+  border-radius: 0 0 123px 123px;
+  border-top: 0;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
 
 <body>
-<my-app>Loading...</my-app>
+<my-app>
+  <div class="spinner">
+    <div class="upper">
+      <div class="inner"></div>
+    </div>
+    <div class="lower">
+      <div class="inner"></div>
+    </div>
+  </div>
+</my-app>
 
 <div class="btn-back-to-top" id="myBtn">
   <span class="symbol-btn-back-to-top">
