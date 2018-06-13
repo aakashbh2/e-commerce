@@ -12,6 +12,7 @@ import { HomePageComponent } from './homePage/homePage.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductDescComponent } from './product-desc/product-desc.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { ProductDescComponent } from './product-desc/product-desc.component';
         HomePageComponent,
         ProductListComponent,
         ContactUsComponent,
-        ProductDescComponent
+        ProductDescComponent,
+        LoginComponent
     ],
     exports: [
       ShoppingCartComponent,
@@ -28,7 +30,8 @@ import { ProductDescComponent } from './product-desc/product-desc.component';
       HomePageComponent,
       ProductListComponent,
       ContactUsComponent,
-      ProductDescComponent
+      ProductDescComponent,
+      LoginComponent
     ],
     imports: [
         BrowserModule,

@@ -11,6 +11,8 @@ import { CatalogueBannerComponent } from './catalogue-banner/catalogue-banner.co
 import { CarouselComponent } from './carousel/carousel.component';
 import { CartSummaryComponent } from './cart-summary/cart-summary.component';
 import { HeaderComponent } from './header/header.component';
+import { LoaderComponent } from './loader/loader.component';
+import { LoaderService } from './loader/loader.service';
 import { RelatedProductsComponent } from './related-products/related-products.component';
 
 @NgModule({
@@ -22,7 +24,8 @@ import { RelatedProductsComponent } from './related-products/related-products.co
         CarouselComponent,
         CartSummaryComponent,
         HeaderComponent,
-        RelatedProductsComponent
+        RelatedProductsComponent,
+        LoaderComponent
     ],
     exports: [
       FooterComponent,
@@ -32,7 +35,8 @@ import { RelatedProductsComponent } from './related-products/related-products.co
       CarouselComponent,
       CartSummaryComponent,
       HeaderComponent,
-      RelatedProductsComponent
+      RelatedProductsComponent,
+      LoaderComponent
     ],
     imports: [
         BrowserModule,
@@ -40,7 +44,7 @@ import { RelatedProductsComponent } from './related-products/related-products.co
         HttpModule,
         RouterModule
     ],
-    providers: []
+    providers: [LoaderService]
 })
 
 export class BasicModule {
